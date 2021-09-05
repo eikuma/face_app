@@ -39,7 +39,7 @@ if uploaded_file is not None:
         text = f'{gender} {round(age)}'
         fontsize = max(16, int(rect['width'] / len(text)))
         font = ImageFont.truetype(
-            "/System/Library/Fonts/Courier.dfont", fontsize)
+            "LiberationSans-Bold.ttf", fontsize)
         text_width, text_height = font.getsize(text)
         draw = ImageDraw.Draw(img)
         draw.rectangle([(rect['left'], rect['top']), (rect['left']+rect['width'],
